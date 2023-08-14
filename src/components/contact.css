@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@0,300;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+.main-contact-div{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    overflow-y: scroll;
+}
+.master-contact-border {
+   
+    border: 2px solid var(--full-web);
+    position: absolute;
+  
+    width: calc(100vw -  4rem);
+    height: calc(100vh - 4rem);
+    overflow-y: scroll;
+    margin: 2rem 2rem;
+   
+    
+  
+}
+.contact-header{
+    color: var(--full-web);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+}
+.address-icon-div{
+    margin-right: 2rem;
+}
+.ad-icon{
+    font-size: 2.3rem;
+    
+}
+.address-point{
+    color: #CFCFCF;
+}
+.para-contact{
+    line-height: 25px;
+}
+form {
+    box-sizing: border-box;
+}
+ form .name{
+    width: 45%;
+    height: 3rem;
+    background: #000;
+    border: 1px solid var(--full-web);
+    border-radius: 2rem;
+    
+    
+ }
+ .sub-mas {
+    height: 3rem;
+    background: #000;
+    border: 1px solid var(--full-web);
+    border-radius: 2rem;
+ }
+ ::placeholder{
+    padding: 3rem;
+ }
+ .send-btn{
+    background: #000;
+    color:white;
+    padding: 1rem 1.2rem;
+    border: 1px solid var(--full-web);
+    border-radius: 3rem;
+    margin-top: 3rem;
+    
+ }
+ 
+ .send-message-icon{
+    color: var(--full-web);
+    font-size: 1.5rem;
+    margin-left: 5px;
+    
+ }
+ .contact-icons{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 40%;
+}
+
+@media only screen and (max-width: 992px) {
+    .send-btn{
+        background: #000;
+        color:white;
+        padding: .8rem 1rem;
+        border: 1px solid var(--full-web);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+     }
+     form .name , .sub-mas {
+      
+        height: 2.6rem;
+      margin-top: 1.2rem;
+        
+        
+     }
+  
+
+}
+@media only screen and (max-width: 600px) {
+    .send-btn{
+        background: #000;
+        color:white;
+        padding: .5rem .7rem;
+        border: 1px solid var(--full-web);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+     }
+     .send-message-icon{
+        color: var(--full-web);
+        font-size: 1.2rem;
+        margin-left: 4px;
+        
+     }
+     .contact-icons{
+    visibility: hidden;
+    }
+    ::placeholder{
+        padding: 2rem;
+     }
+     .ad-icon{
+        font-size: 2rem;
+        
+    }
+    .address-icon-div{
+        margin-right: 1rem;
+    }
+}

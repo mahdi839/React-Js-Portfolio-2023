@@ -1,0 +1,157 @@
+:root {
+    --full-web: #FFA001
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400;1,500;1,600&display=swap');
+  .main-div{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    position: relative;
+}
+.master-border{
+   
+    border: 2px solid var(--full-web);
+    position: absolute;
+  
+    width: calc(100vw -  4rem);
+    height: calc(100vh -  4rem);
+    margin: 2rem 1rem 2rem 2rem;
+   
+}
+.navbar-nav a{
+    color: var(--full-web);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.nav-btn{
+    
+  background-color: var(--full-web);
+}
+.nav-icon{
+    color: white;
+}
+nav ul li a{
+    text-decoration: none;
+   
+    border-bottom: 1px solid var(--full-web);
+   padding:.5rem 1rem ;
+  
+    
+}
+
+.image-div img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.content-div h1{
+    color: var(--full-web);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  
+}
+
+.content-div p{
+    font-size: 400;
+    line-height: 2rem;
+}
+
+
+.about-me-btn{
+    background: #000;
+    border: 1px solid var(--full-web);
+    padding: .5rem 1.2rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+.btn-arrow{
+    font-size: 2rem;
+    color: var(--full-web);
+    margin-left: 5px;
+  
+}
+nav ul li a:hover{
+    
+    color: white;
+    
+}
+.active{
+    background: white;
+    color: var(--full-web);
+    
+}
+.active:hover{
+    background: white;
+    color: var(--full-web);
+
+}
+.content-col-div{
+    padding-left: 15rem;
+}
+.home-container-div{
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+   
+}
+@media only screen and (max-width: 992px) {
+  
+    .content-col-div{
+        margin-top:5rem;
+        padding-left: 4rem;
+    }
+    .image-div img{
+        
+        max-width: 350px;
+    }
+    .content-div p{
+        font-size: 400;
+        line-height: 1.5rem;
+        padding-top: 1rem;
+    }
+    .about-me-btn{
+        
+        padding: .5rem 1.2rem;
+        color: white;
+        font-size: 1rem;
+        margin-top: 1rem;
+       
+    }
+   
+    nav ul li a{
+        
+       
+        border-bottom: none;
+      
+      
+        
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    
+    nav ul{
+        position: fixed;
+    } 
+    .content-div h1{
+        
+        font-weight: 700;
+        font-size: 1.5rem;
+      
+    }
+    .content-div p{
+       
+        line-height: 1.3rem;
+    }
+    .image-div img{
+        
+        max-width: 350px;
+        border-radius: 3rem;
+    }
+
+}

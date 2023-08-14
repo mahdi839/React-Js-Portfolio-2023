@@ -1,0 +1,71 @@
+:root {
+    --full-web: #FFA001
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400;1,500;1,600&display=swap');
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    overflow-y: scroll;
+}
+.master-skills-border{
+   
+    border: 2px solid var(--full-web);
+    position: absolute;
+  
+    width: calc(100vw -  4rem);
+    height: calc(100vh - 4rem);
+    overflow-y: scroll;
+    margin: 2rem 2rem;
+   
+}
+.portfolio{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    padding-bottom: .5rem;
+}
+.portfolio::after{
+    content: '';
+    width: 60px;
+    height: 5px;
+    background: var(--full-web);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portfolio-img-div{
+    display: flex;
+    flex-direction: row;flex-wrap: wrap;
+}
+.portfolio-img-div a img{
+    width: 14rem;
+    height: 15rem;
+ 
+   
+   
+}
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+@media only screen and (max-width:992px) {
+
+    .portfolio-img-div{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .portfolio-img-div{
+        justify-content: center;
+    }
+
+    .sk-pro{
+        margin-bottom: 2rem;
+    }
+}

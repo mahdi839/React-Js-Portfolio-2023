@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@0,300;0,600;0,700;1,400;1,500;1,600&display=swap');
+ *{
+    box-sizing: border-box;
+ }
+.main-about-div{
+   
+        width: 100vw;
+        height: 100vh;
+        background: #000;
+        position: relative;
+}
+.master-about-border {
+   
+    border: 2px solid var(--full-web);
+    position: absolute;
+  
+    width: calc(100vw -  4rem);
+    height: calc(100vh -  4rem);
+    margin: 2rem 1rem 2rem 2rem;
+    
+  
+}
+.about-mid{
+    margin-left: 7rem;
+}
+.name-div{
+    display: flex;
+    
+}
+.show-experience-div{
+    display: flex;
+   
+    
+   
+}
+.exp-year1{
+    margin-right: 10rem;
+}
+.name1{
+    margin-right: 4rem;
+}
+.name1 h6{
+    line-height: 2.3rem;
+}
+.name2 h6{
+    line-height: 2.3rem;
+}
+.personal-info{
+    font-family: 'Oswald', sans-serif;
+}
+
+.about-des-exp{
+    font-size: 3rem;
+}
+.about-icons{
+    position: absolute;
+    bottom: 2rem;
+    left: 40%;
+}
+
+@media only screen and (max-width: 992px) {
+    .name1 h6{
+        line-height: 1.3rem;
+    }
+    .name2 h6{
+        line-height: 1.3rem;
+    }
+    .about-des-exp{
+        font-size: 1.8rem;
+    }
+    .exp-year1{
+        margin-right: 2rem;
+    }
+    /* .res-des{
+        margin-top: 3rem;
+    } */
+    /* .exp-year1{
+        margin-bottom: 2rem;
+    } */
+    .about-icons{
+        position: absolute;
+        bottom: 2rem;
+        left: 40%;
+    }
+    .exp-year {
+        margin-left: 4rem;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+
+    .about-mid{
+        margin-left: 0px;
+    }
+    .name1{
+        margin-right: 1rem;
+    }
+
+
+}
+@media only screen and (max-width: 600px) {
+    
+    .about-mid{
+        margin-left: 1rem;
+    }
+    .name1 h6{
+        line-height: 1.3rem;
+    }
+    .name2 h6{
+        line-height: 1.3rem;
+    }
+    .exp-year {
+        margin-left: 2rem;
+    }
+    .show-experience-div{
+        margin-top: 2rem;
+    }
+    .about-icons{
+        position: absolute;
+        bottom: 1rem;
+        left: 25%;
+    }
+  
+    .name2{
+        margin-left: 1rem;
+    }
+    
+}
